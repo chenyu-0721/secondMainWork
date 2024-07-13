@@ -1,0 +1,447 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  max-width: 1920px;
+  margin: auto;
+}
+
+body {
+  font-family: Bruno Ace SC, sans-serif;
+}
+/*
+ * Nav
+*/
+
+.sectionNav {
+  background-color: #000000;
+}
+
+.sectionNav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 128px;
+  box-sizing: border-box;
+  background-color: #000000;
+}
+
+.sectionNav li {
+  line-height: 24px;
+  color: #d1d1d1;
+}
+
+.sectionNav .two-lines {
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+ * Header
+*/
+
+.sectionHeader {
+  background-color: #000000;
+  box-sizing: border-box;
+  padding-top: 72px;
+  padding-bottom: 32px;
+}
+
+.sectionHeader .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.sectionHeader .header img {
+  margin-right: 24px;
+}
+
+.sectionHeader .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionHeader .content .whiteSpan {
+  font-size: 64px;
+  line-height: 96px;
+  color: white;
+}
+
+.sectionHeader .greenSpan {
+  font-size: 128px;
+  line-height: 192px;
+  text-align: right;
+  color: #00ffa3;
+}
+
+.sectionHeader button {
+  display: flex;
+  align-items: center;
+  line-height: 24px;
+  width: 185px px;
+  height: 48px px;
+  padding: 12px 24px 12px 24px;
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.sectionHeader .buttonPosition {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sectionIntroduction {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true");
+  height: 920px;
+}
+
+/*
+ * Introduction
+*/
+
+.sectionIntroduction .content h2 {
+  font-size: 64px;
+  line-height: 96px;
+  color: #ffffff;
+}
+
+.sectionIntroduction .content p {
+  padding-top: 36px;
+  padding-bottom: 32px;
+  width: 526px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.Introduction {
+  box-sizing: border-box;
+  padding: 160px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionIntroduction .Introduction .rightImg {
+  padding: 0px 12px;
+}
+
+/*
+ * sectionAboutMe
+*/
+
+.sectionAboutMe .aboutMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 740px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap; /* 允许换行 */
+  justify-content: space-between;
+  width: 636px;
+  height: 328px;
+}
+
+.sectionAboutMe .cardContent {
+  box-sizing: border-box;
+  width: 306px;
+  height: 148px;
+  padding: 16px;
+  border: 1px solid #e3e3e3;
+  box-shadow: 4px 4px 4px 0px #00000014;
+}
+
+.sectionAboutMe .cardContent h4 {
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 4px;
+}
+
+.sectionAboutMe .cardContent p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.sectionAboutMe .rightContent {
+  box-sizing: border-box;
+  padding-left: 134px;
+}
+.sectionAboutMe .rightContent h2 {
+  font-size: 64px;
+  line-height: 96px;
+  padding-bottom: 36px;
+}
+
+.sectionAboutMe .rightContent p {
+  font-size: 24px;
+  line-height: 36px;
+  color: #15161d;
+  width: 526px;
+}
+
+/* 
+* Contact
+*/
+
+.sectionContact {
+  display: flex;
+  height: 354px;
+  background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+}
+
+.sectionContact .contact {
+  display: flex;
+  align-items: center;
+}
+
+.sectionContact .leftContact {
+  display: flex;
+}
+
+.sectionContact .leftContact h2 {
+  font-size: 64px;
+  line-height: 96px;
+  padding-right: 16px;
+  color: white;
+}
+.sectionContact .leftContact img {
+  padding-right: 113px;
+}
+
+.sectionContact .rightContact {
+  display: flex;
+  justify-content: space-between;
+  width: 526px;
+}
+
+.sectionContact .rightContact img {
+  border-radius: 40px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.sectionContact .rightContact img:hover {
+  box-shadow: 0px 0px 16px 3px #9094ffe5;
+}
+
+/**
+ ** Project
+ */
+
+.sectionProject {
+  height: 962px;
+}
+
+.sectionProject .projectPosition {
+  display: flex;
+  justify-content: end;
+  width: 72%;
+}
+
+.sectionProject .project {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding-top: 160px;
+}
+
+.sectionProject .project h2 {
+  font-size: 64px;
+  line-height: 96px;
+}
+
+.sectionProject .bottomProject {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.sectionProject .rightContent {
+  padding-left: 24px;
+}
+
+.sectionProject .rightTop {
+  display: flex;
+}
+
+.sectionProject .rightTopContent {
+  width: 636px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 24px;
+}
+
+.sectionProject .rightTopContent p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #15161d;
+}
+
+.sectionProject .rightTopContent button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 185px;
+  height: 48px;
+  border-radius: 32px;
+  background-color: #000000;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.sectionProject .rightBottom {
+  margin-top: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 
+ * Footer
+*/
+
+.sectionFooter footer {
+  height: 104px;
+  background: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 40px 0;
+}
+
+.sectionFooter footer p {
+  line-height: 24px;
+  color: white;
+}
